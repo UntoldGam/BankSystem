@@ -18,7 +18,7 @@ public class BankSystem {
         System.out.println(UserDataString.size());
         String[] UserSplit = UserDataString.get(0).split(",");
         String name = UserSplit[0];
-        Double balance = Double.parseDouble(UserSplit[1]);
+        Float balance = Float.parseFloat(UserSplit[1]);
         UserAccount User = new UserAccount();
         User = User.main(name, balance);
         /*
