@@ -16,3 +16,8 @@ AdminType = 1, 2 or 3
 1 = All Regions
 2 = 1 region,
 3 = Not an Admin
+
+
+### Design
+
+LoginFrame -> Sends a UserAccount to the MenuFrame -> MenuFrame -> Click one of the buttons -> Each frame renders a new _Frame, this Frame is temporary and is deleted upon the completed action (unless it's the BalanceButton in which, the output is displayed within the MenuFrame) 
