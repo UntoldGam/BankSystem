@@ -7,8 +7,10 @@ import java.beans.PropertyChangeListener;
 import javax.swing.*;
 
 import Base.UserAccount;
-public class MenuFrame extends JFrame {
+public class MenuFrame extends MainFrame {
+    JFrame Deposit = null;
     MenuFrame(UserAccount user) {
+        MenuFrame mf = this;
         JButton BalanceButton = new JButton("Click to view your balance");
         BalanceButton.setBounds(150,150,220,50);
         JButton DepositButton = new JButton("Click to put money into your account");
@@ -17,6 +19,8 @@ public class MenuFrame extends JFrame {
         WithdrawButton.setBounds(150,250,220,50);
         JButton LogoutButton = new JButton("Click to log out of this account");
         LogoutButton.setBounds(150,300,220,50);
+        // TODO: Remove and move to BalanceFrame
+        
         JTextArea OutputLabel = new JTextArea();
         OutputLabel.setEditable(false);
         OutputLabel.setLineWrap(true);
@@ -26,25 +30,21 @@ public class MenuFrame extends JFrame {
         BalanceButton.addActionListener(
             new ActionListener(){ 
                 public void actionPerformed(ActionEvent e){  
-                    OutputLabel.setText("Your current balance is "+user.GetBalance());
+                    OutputLabel.setText("Your current balance is £"+user.GetBalance());
                     OutputLabel.setVisible(true);
                 }  
             }
         );
+        
         DepositButton.addActionListener(
             new ActionListener(){ 
                 public void actionPerformed(ActionEvent e){  
                     OutputLabel.setText("Deposit something into this balance: "+user.GetBalance());
-                    JFrame f = new JFrame();
-                    JTextField tf = new JTextField();
-                    tf.addPropertyChangeListener("Text", new PropertyChangeListener() {
-                        public void propertyChange(PropertyChangeEvent evt) {
-                            
-                        }
-                    });
-                    f.add(tf);
-                    f.setVisible(true);
-                    
+                    //if (Deposit != null) {
+                    //    mf.remove(Deposit);
+                    //} else {
+                    Deposit = new DepositFrame(user);
+                    //}
                 }  
             }
         );

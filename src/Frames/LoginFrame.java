@@ -5,9 +5,9 @@ import javax.swing.*;
 
 import Base.UserAccount;
 
-public class LoginFrame extends JFrame implements ActionListener {
+public class LoginFrame extends MainFrame implements ActionListener {
    public UserAccount user;
-   public UserAccount main() {
+   public LoginFrame() {
       JFrame f = this;
       /*
        * Create the field + submit etc
@@ -42,15 +42,10 @@ public class LoginFrame extends JFrame implements ActionListener {
       this.add(TextField);
       this.add(TextButton);
       // Do not touch
-      this.setSize(500, 600); // 400 width and 500 height
-      this.setLayout(null); // using no layout managers
-      this.setVisible(true); // making the frame visible
+      this.setSize(500, 600);
+      this.setLayout(null);  
+      this.setVisible(true); 
       this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);    
-      if (user != null) {
-         return user;
-      } else {
-         return new UserAccount();
-      }
    }
 
    @Override

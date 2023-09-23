@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import Base.*;
-import Frames.*;
+import Frames.LoginFrame;
 
 
 public class BankSystem {
@@ -11,11 +11,7 @@ public class BankSystem {
     public static void main(String[] args) throws IOException, InterruptedException {
         System.out.println("Bank System opening");
         
-        UserAccount user = new LoginFrame().main();
-        // Show MenuPanel
-        if (user != null) {
-            System.out.println("this wasn't supposed to happen...");
-        }
+        new LoginFrame();
         
 
         /* 
