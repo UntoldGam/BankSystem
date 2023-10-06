@@ -5,7 +5,7 @@ public class UserAccount {
     private Float balance = (float) 0;
     private String name = "";
 
-    public UserAccount main(String Name,Float balanceNumber) {
+    public UserAccount CreateAccount(String Name,Float balanceNumber) {
         this.name = Name;
         this.balance = balanceNumber;
         return this;

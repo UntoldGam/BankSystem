@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 import Base.UserAccount;
-
+import Frames.DepositFrame;
 public class DepositFrame extends MainFrame {
     DepositFrame(UserAccount user) {
         JFrame f = this;

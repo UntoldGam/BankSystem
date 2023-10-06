@@ -1,0 +1,101 @@
+#Breadcrumb ul {
+    list-style: none;
+    display: inline-block;
+    height: 35px;
+    margin-bottom: 1em;
+}
+
+#Breadcrumb ul .fa {
+    font-size: 18px;
+    color: #6b6f70;
+}
+
+#Breadcrumb ul li {
+    float: left;
+}
+
+#Breadcrumb ul li a,#Breadcrumb ul li.active {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+    color: #6b6f70;
+    background: #f2f2f2;
+}
+
+#Breadcrumb ul li:first-child a,#Breadcrumb ul li:first-child.active {
+    padding-left: 15px;
+}
+
+#Breadcrumb ul li:first-child a:before,#Breadcrumb ul li:first-child.active:before {
+    border: none;
+}
+
+#Breadcrumb ul li:last-child a,#Breadcrumb ul li:last-child.active {
+    padding-right: 15px;
+}
+
+#Breadcrumb ul li:last-child a:after,#Breadcrumb ul li:last-child.active:after {
+    border: none;
+}
+
+#Breadcrumb ul li a:before,#Breadcrumb ul li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0 solid #f2f2f2;
+    border-width: 17px 10px 18px 10px;
+    width: 0;
+    height: 0;
+    transform: scale(.999,.999);
+}
+
+#Breadcrumb ul li a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+
+#Breadcrumb ul li a:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #f2f2f2;
+}
+
+#Breadcrumb ul li a:hover {
+    background-color: rgb(125, 184, 198);
+    color: #fff;
+}
+
+#Breadcrumb ul li a:hover .fa {
+    color: #fff;
+}
+
+#Breadcrumb ul li a:hover:before {
+    border-color: rgb(125, 184, 198);
+    border-left-color: transparent;
+}
+
+#Breadcrumb ul li a:hover:after {
+    border-left-color: rgb(125, 184, 198);
+}
+
+#Breadcrumb ul li a:active {
+    background-color: #fff;
+}
+
+#Breadcrumb ul li a:active:before {
+    border-color: #fff;
+    border-left-color: transparent;
+}
+
+#Breadcrumb ul li a:active:after {
+    border-left-color: #fff;
+}
+
+#Breadcrumb ul li.active {
+    background-color: #fff;
+}

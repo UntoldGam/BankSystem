@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+
+:root {
+    --background: #ffffff;
+    --accent-col: #609fde;
+    --c1: #609fde;
+    --c2: #1263b3;
+    
+
+}
+
+* {
+    font-family: Raleway;
+}
+
+
+/* NavigationBar */
+
+header #mobileNav {
+    height: 50%;
+}
+
+nav section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav section a {
+    margin-right: 10px;
+    list-style-type: none;
+    background-color: #1263b3;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav section a div {
+    text-decoration: none;
+}
+
+.navBar {
+    transition: 0.5s;
+}
+
+.form {
+    background: #FFFFFF;
+    width: 35%;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 10px 0 10px 0 rgba(134, 193, 227, 0.618);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 0px solid #8c8c8c;
+}
+
+.form input:hover, .form input:focus {
+    border-width: 2px;
+    border-radius: 5px;
+    transition:1s;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #609fde;    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%
+}
+.form button:hover {
+    border-radius: 15px;    
+    transition: 0.7s;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #6e6d6d;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #609fde;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}

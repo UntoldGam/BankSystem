@@ -1,8 +1,6 @@
 package Frames;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 import javax.swing.*;
 
@@ -10,7 +8,7 @@ import Base.UserAccount;
 public class MenuFrame extends MainFrame {
     JFrame Deposit = null;
     MenuFrame(UserAccount user) {
-        MenuFrame mf = this;
+        //MenuFrame mf = this;
         JButton BalanceButton = new JButton("Click to view your balance");
         BalanceButton.setBounds(150,150,220,50);
         JButton DepositButton = new JButton("Click to put money into your account");

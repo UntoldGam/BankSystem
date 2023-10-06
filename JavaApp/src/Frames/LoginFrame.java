@@ -29,7 +29,7 @@ public class LoginFrame extends MainFrame implements ActionListener {
             public void actionPerformed(ActionEvent e){  
                String name = TextField.getText();
                if (name != null) {
-                  user = new UserAccount().main(name,(float) 0);
+                  user = new UserAccount().CreateAccount(name,(float) 0);
                   f.dispose();
                   new MenuFrame(user);
                }

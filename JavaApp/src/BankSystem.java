@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 import Base.*;
 import Frames.LoginFrame;
+import Frames.NewLoginFrame;
+import Frames.ResizingComponentsExample;
 
 
 public class BankSystem {
@@ -11,7 +13,8 @@ public class BankSystem {
     public static void main(String[] args) throws IOException, InterruptedException {
         System.out.println("Bank System opening");
         
-        new LoginFrame();
+        new NewLoginFrame();
+        //new LoginFrame();
         
 
         /* 

@@ -1,0 +1,54 @@
+.mauto {
+    margin: 0 auto;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
+
+.vertical {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100vw {
+    width: 100vw;
+}
+
+.w80vw {
+    width: 80vw;
+}
+
+.w50vw {
+    width: 50vw;
+}
